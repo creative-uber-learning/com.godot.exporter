@@ -1,3 +1,7 @@
+# [FORK]
+
+Aim of this fork is to update the project for Unity 2020 and Godot 4 (Dev branch) with 3D support (mesh position, with materials and their textures)
+
 Unity Engine to Godot Engine exporter
 =======================================
 
