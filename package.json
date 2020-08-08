@@ -1,0 +1,9 @@
+{
+    "name": "com.godot.exporter",
+    "description": "Export your Unity scene to the Godot game engine",
+    "version": "0.1.0",
+    "displayName": "Godot Exporter",
+    "keywords": [
+      "godot"
+    ]
+}

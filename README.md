@@ -1,29 +1,16 @@
-# [FORK]
+# Unity Engine to Godot Engine exporter package
 
-Aim of this fork is to update the project for Unity 2020 and Godot 4 (Dev branch) with 3D support (mesh position, with materials and their textures)
+**WORK IN PROGRESS** Allows you to export your Unity 3D scene (meshes, materials and positions) into Godot.
 
-To make the project work, must create a Godot project, and set in path in Exporter.cs `var e = new Exporter("C:/yourGodotProjectPath");` . Your Godot project must have an Assets folder with a Scenes folder inside. For now, 3D nodes are not supported.
+## Getting started
 
-Unity Engine to Godot Engine exporter
-=======================================
+Create a new Unity project, open the package manager and select the plus icon. Add a local package, move to this repository and open the `package.json`.
 
-This is an experimental script that allows you to convert all scenes in your Unity project into a Godot project. It is not aimed at doing everything automatically, only things that can be converted decently.
-It's only a proof of concept on simple 2D games for now, and a ton of work remains to be done if it were to support everything else.
-While there are always cases where conversion is ambiguous and things to do manually, it's still fun to at least have the ability to automate this to some extent.
+Now create a Godot project, and set its path in Exporter.cs `var e = new Exporter("C:/yourGodotProjectPath");` . Your Godot project must have an Assets folder with a Scenes folder inside. For now, 3D nodes are not supported.
 
-I have other projects to work on so I won't work much on this tool for now, and I am aware that there is an abysmal amount of features it could support^^ But feel free to hack around with it and improve it if you like the idea.
+A Godot option is supposed to appear in Unity on the top Window. Simply click on it to export the project.
 
-
-How to install
----------------
-
-Copy this repository in your Unity project, inside a folder named `Editor`, and you should see a new `Godot` menu with options in it.
-
-Although it should not modify anything in the project, it's up to you to preserve your data if anything wrong happens :p
-
-
-Some challenges
------------------
+## Development notes from the original author
 
 Here is a random list of things I had to take choices, for which workarounds may or may not exist.
 There may be a lot more, but you can get an idea of what this tool has to get through:
@@ -56,3 +43,9 @@ There may be a lot more, but you can get an idea of what this tool has to get th
 
 - Unity can imports 3D models as "fixed" prefabs, a bit like Godot does, so I am not sure if the tool should generate scenes for those, or let Godot do it
 
+
+## Sources
+
+- [TSCN Godot file format](https://docs.godotengine.org/en/stable/development/file_formats/tscn.html)
+- [Blender to Godot exporter](https://docs.godotengine.org/en/stable/getting_started/workflow/assets/escn_exporter/index.html)
+- [Creating custom packages in Unity](https://docs.unity3d.com/Manual/CustomPackages.html)

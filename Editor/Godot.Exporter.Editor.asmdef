@@ -1,0 +1,6 @@
+{
+    "name": "Godot.Exporter.Editor",
+    "includePlatforms": [
+        "Editor"
+    ]
+}

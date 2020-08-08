@@ -12,7 +12,7 @@ namespace Godot
         [MenuItem("Godot/Export to Godot 3.1")]
         static void ExportToGodot31()
         {
-            var e = new Exporter("D:/PROJETS/INFO/UNITY/LD32_EatAndCopulate/GodotProject");
+            var e = new Exporter("C:/Users/guill/Desktop/testGodot");
             e.Export();
         }
 
