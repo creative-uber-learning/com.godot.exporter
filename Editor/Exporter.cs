@@ -9,13 +9,6 @@ namespace Godot
 {
     class Exporter : IConvertedResourceProvider
     {
-        [MenuItem("Godot/Export to Godot 3.1")]
-        static void ExportToGodot31()
-        {
-            var e = new Exporter("C:/Users/guill/Desktop/testGodot");
-            e.Export();
-        }
-
         enum ScriptLanguage
         {
             GDScript,
@@ -33,7 +26,7 @@ namespace Godot
         // Had to make a separate collection for sprites because they don't have a unique path
         Dictionary<UnityEngine.Sprite, Resource> _convertedSprites = new Dictionary<UnityEngine.Sprite, Resource>();
 
-        Exporter(string targetProjectDir)
+        public Exporter(string targetProjectDir)
         {
             _projectDir = targetProjectDir;
         }

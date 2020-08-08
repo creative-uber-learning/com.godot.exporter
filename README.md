@@ -4,11 +4,17 @@
 
 ## Getting started
 
-Create a new Unity project, open the package manager and select the plus icon. Add a local package, move to this repository and open the `package.json`.
+Download this repository, create a new Unity project and unzip the files into the *Package* folder.
 
-Now create a Godot project, and set its path in Exporter.cs `var e = new Exporter("C:/yourGodotProjectPath");` . Your Godot project must have an Assets folder with a Scenes folder inside. For now, 3D nodes are not supported.
+A Godot tab will appear in the Unity top bar. Click on it to open the exporter window. There you can select your Godot project to export to. 
 
-A Godot option is supposed to appear in Unity on the top Window. Simply click on it to export the project.
+For the time being, your Godot project must have an *Assets* folder with a *Scenes* folder inside. 
+
+## Roadmap
+
+- [x] Create a Unity package
+- [x] Add a custom window in Unity for the exporter
+- [ ] Export 3D Mesh
 
 ## Development notes from the original author
 
@@ -49,3 +55,4 @@ There may be a lot more, but you can get an idea of what this tool has to get th
 - [TSCN Godot file format](https://docs.godotengine.org/en/stable/development/file_formats/tscn.html)
 - [Blender to Godot exporter](https://docs.godotengine.org/en/stable/getting_started/workflow/assets/escn_exporter/index.html)
 - [Creating custom packages in Unity](https://docs.unity3d.com/Manual/CustomPackages.html)
+- [Extending Unity Editor](https://docs.unity3d.com/Manual/editor-EditorWindows.html)
