@@ -2,6 +2,8 @@
 
 Aim of this fork is to update the project for Unity 2020 and Godot 4 (Dev branch) with 3D support (mesh position, with materials and their textures)
 
+To make the project work, must create a Godot project, and set in path in Exporter.cs `var e = new Exporter("C:/yourGodotProjectPath");` . Your Godot project must have an Assets folder with a Scenes folder inside. For now, 3D nodes are not supported.
+
 Unity Engine to Godot Engine exporter
 =======================================
 
